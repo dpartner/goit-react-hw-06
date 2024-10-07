@@ -1,0 +1,18 @@
+.contactList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.item {
+  flex-basis: calc((100% - 24px) / 2);
+  @media screen and (min-width: 950px) {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+  @media screen and (min-width: 1400px) {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+}

@@ -1,0 +1,33 @@
+.searchWrap {
+  width: calc((100% - 24px) / 2);
+  min-width: 178px;
+  display: flex;
+  flex-direction: column-reverse;
+  @media screen and (min-width: 950px) {
+    width: calc((100% - 48px) / 3);
+  }
+  @media screen and (min-width: 1400px) {
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+.input {
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 8px;
+  height: 30px;
+  color: rgba(39, 39, 39, 0.87);
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  caret-color: purple;
+  &:hover,
+  &:focus {
+    border: 1px solid purple;
+    outline: none;
+  }
+}
+
+.inputName {
+  margin-bottom: 5px;
+}

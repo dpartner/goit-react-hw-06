@@ -1,0 +1,62 @@
+.form {
+  width: calc((100% - 24px) / 2);
+  min-width: 178px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 15px;
+  @media screen and (min-width: 950px) {
+    width: calc((100% - 48px) / 3);
+  }
+  @media screen and (min-width: 1400px) {
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+.label {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 8px;
+  height: 30px;
+  color: rgba(39, 39, 39, 0.87);
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  caret-color: purple;
+  &:hover,
+  &:focus {
+    border: 1px solid purple;
+    outline: none;
+  }
+}
+
+.err {
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  color: red;
+}
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: auto auto;
+  &:hover,
+  &:focus {
+    background-color: purple;
+    outline: none;
+  }
+}
